@@ -6,13 +6,16 @@ import { MyProfileComponent } from './admin/my-profile/my-profile.component';
 import { ProjectsComponent } from './admin/projects/projects.component';
 import { LoginComponent } from './login/login.component';
 
+import { SignUpComponent } from './sign-up/sign-up.component';
+
 const routes: Routes = [
   {path:"dashboard",component:DashboardComponent},
   {path:"about",component:AboutComponent},
   {path:"myprofile",component:MyProfileComponent},
   {path:"projects",component:ProjectsComponent},
   {path:"login",component:LoginComponent},
-  {path:"",redirectTo:"Login",pathMatch:"full"}
+  {path:"signup",component:SignUpComponent},
+  {path:"",redirectTo:"login",pathMatch:"full"}
 
 ];
 
